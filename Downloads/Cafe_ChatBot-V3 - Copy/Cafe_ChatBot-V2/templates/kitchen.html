@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="static/bill/fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="static/bill/css/owl.carousel.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="static/bill/css/bootstrap.min.css">
+    
+    <!-- Style -->
+    <link rel="stylesheet" href="static/bill/css/style.css">
+
+    <title>Kitchen</title>
+  </head>
+  <body>
+  
+
+  <div class="content">
+    
+    <div class="container">
+      <h2 class="mb-5">Kitchen</h2>
+      
+
+      <div class="table-responsive">
+
+        <table class="table table-striped custom-table">
+          <thead>
+            <tr>
+              
+              <th scope="col">Order Number</th>
+              <th scope="col">Item Names</th>
+              <th scope="col">Date</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for st in stu%}
+      <tr>
+        <th scope="row">{{st.Order_Number}}</th>
+        <td><a href="transport">{{st.items}}</a></td>
+        <td><a href="transport">{{st.date}}</a></td>
+      </tr>
+      {% endfor %}
+          </tbody>
+        </table>
+      </div>
+
+
+    </div>
+
+  </div>
+    
+    
+
+    <script src="static/bill/js/jquery-3.3.1.min.js"></script>
+    <script src="static/bill/js/popper.min.js"></script>
+    <script src="static/bill/js/bootstrap.min.js"></script>
+    <script src="static/bill/js/main.js"></script>
+  </body>
+</html>

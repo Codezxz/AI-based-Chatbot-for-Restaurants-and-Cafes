@@ -1,0 +1,6 @@
+Django
+
+numpy
+torch
+nltk
+

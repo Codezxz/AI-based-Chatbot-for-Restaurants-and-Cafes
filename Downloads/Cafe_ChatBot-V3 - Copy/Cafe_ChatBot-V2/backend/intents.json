@@ -1,0 +1,125 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "Is anyone there?",
+        "Hello",
+        "Good day"
+      ],
+      "responses": [
+        "Hey :-), I can take order for you or even tell a joke!",
+        "Hello, thanks for visiting, I can take order for you or even tell a joke!",
+        "Hi there, what can I do for you?, I can take order for you or even tell a joke!",
+        "Hi there, how can I help?, I can take order for you or even tell a joke!"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye"],
+      "responses": [
+        "See you later, thanks for visiting",
+        "Have a nice day",
+        "Bye! Come back again soon."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+    },
+    {
+      "tag": "items",
+      "patterns": [
+        "Which items do you have?",
+        "What kinds of items are there?",
+        "What do you sell?",
+        "What do you have in your menu?"
+      ],
+      "responses": [
+        "We have pizza and burger",
+        "We have burger and pizza"
+      ]
+    },
+    {
+      "tag": "payments",
+      "patterns": [
+        "Do you take credit cards or debit cards?",
+        "Do you accept Mastercard?",
+        "Can I pay with Paypal?",
+        "How do I pay?",
+        "Are you cash only?"
+      ],
+      "responses": [
+        "We accept VISA, Mastercard and Google pay",
+        "We accept most major credit cards, and Google pay"
+      ]
+    },
+    {
+      "tag": "delivery",
+      "patterns": [
+        "How much time will it take?",
+        "How long does order take?",
+        "When do I get my order"
+      ],
+      "responses": [
+        "Order preparation takes less than 20 minutes",
+        "Order preparation takes less than 20 minutes"
+      ]
+    },
+    {
+      "tag": "funny",
+      "patterns": [
+        "Tell me a joke!",
+        "Tell me something funny!",
+        "Do you know a joke?"
+      ],
+      "responses": [
+        "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
+        "What do you call bears with no ears? B.",
+        "What did the buffalo say when his son left for college? Bison."
+      ]
+    },
+    {
+      "tag": "order",
+      "patterns": [
+        "I need 1 pizza and 3 burger",
+        "I want pizza",
+        "I want burger"
+      ],
+      "responses": [
+        "Your order will be ready! and your order number is 103",
+        "Your order number is 275, your order will be ready!"
+      ]
+    },
+    {
+      "tag": "information",
+      "patterns": [
+        "Tell me something about SSR Cafe",
+        "Tell me about this cafe",
+        "Why is cafe name SSR Cafe",
+        "I want to know about this cafe",
+        "Who are you?",
+        "Give me information about yourself"
+      ],
+      "responses": [
+        "Name of this cafe is SSR Cafe, SSR are the initials of the founders Satyen Deshpande, Sarthak Shinde, Raj Mhatre respectively. SSR Cafe was launched for college mini-project.",
+        "Name of this cafe is SSR Cafe, SSR are the initials of the founders Satyen Deshpande, Sarthak Shinde, Raj Mhatre respectively. SSR Cafe was launched for college mini-project."
+      ]
+    },
+    {
+      "tag": "offers",
+      "patterns": [
+        "Any special offers?",
+        "Do you have any offers?",
+        "Do you have any discounts?"
+      ],
+      "responses": [
+        "We have 30% discount on burger",
+        "We have 30% discount on pizza"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" type="text/css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="static/css/style.css">
+  <title>Burger n Pizzas</title>
+</head>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-warning">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="kitchen">Kitchen</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="bill">Billing Counter</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<body style="background-color: black;">
+
+  <div class="row backcolor" style="background-color: black;">
+    <div class="col-6 mx-4 w3-panel w3-border w3-border-amber backcolor" style="background-color: black;">
+      <br class="row backcolor" style="background-color: black;">
+      <div class="container backcolor" style="background-color: black;">
+        <div class="row backcolor" style="background-color: black;">
+          <div class="card col" style="height: 20rem; background-color: black;">
+            <div class="card-body align-items-center"style="background-color: black;">
+              <center>
+                <h3 class="title text-warning mb-4 " style = "font-family: Geneva, Verdana, sans-serif; color:white;">Burger n Pizzas</h3>
+              </center>
+              <form method="POST" action="">
+                {% csrf_token %}
+
+                <div class="row   justify-content-end" style="background-color: black;">
+                  <p class="bg-warning py-3 px-3" style="color:white; border-radius: 7px;">You</p> :<div class=" card align-items-center p-3" style = "font-family: Geneva, Verdana, sans-serif;">{{ user}}<br></div>
+                </div>
+
+                <div class="row mt-3 justify-content-start">
+                  <p class="bg-warning py-3 text-light px-3" style = "font-family: Geneva, Verdana, sans-serif; border-radius: 7px;">ChatBot</p> :<div class=" card align-items-center  p-3" style="width:auto ; height: auto; font-family: Geneva, Verdana, sans-serif;">{{bot}}<br></div>
+                </div>
+<div class="container w3-border mt-3 w3-border-amber">
+                <div class="row justify-content-around d-flex   align-items-center" style="height: 10rem;">
+                  <input type="text" name="input" name="input" class="col-8  form-control border-warning"></input>
+                  <button class="btn btn-warning text-light col-3">Send</button>
+                </div>
+              </div>
+            </div>
+            </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="col-5 mt-3">  <img src="static/menu.jpeg" height="800px" width="600px" alt="..."></div>
+  </div>
+</body>
+
+</html>
